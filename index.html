@@ -74,11 +74,31 @@
       }
       .container-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr; /* Default to 1 column for mobile */
         gap: 15px;
         background-color: rgb(23, 233, 240);
-      }
+        width: 100%; /* Ensure grid takes full width of container */
+        padding: 10px; /* Add some padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+    
+    /* Media query for tablets (minimum width 576px) */
+    @media (min-width: 576px) {
+        .container-grid {
+            grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+        }
+    }
+    
+    /* Media query for desktops (minimum width 992px) */
+    @media (min-width: 992px) {
+        .container-grid {
+            grid-template-columns: 1fr 1fr 1fr; /* 3 columns for large screens */
+        }
+    }
+    .container-grid img {
+        max-width: 100%;
+        height: auto;
+    }
     </style>
   </head>
   <body>
@@ -271,8 +291,7 @@
             <li>Enhance self-confidence</li>
         </ul> 
         <h1 id="yoga-section"><b>Some Examples of Yoga Asanas: </b></h1>
-    </div>
-    <div class="container-grid">
+      <div class="container-grid">
         <div class="one">
             <h2> Tadasana (Mountain Pose)</h2>
             <img src="https://th.bing.com/th/id/OIP.MY0g88WshEIb71dlcgaimgHaE8?w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Tadasana" height="190px" width="220px">
@@ -327,6 +346,7 @@
                 Download resource
               </button>
         </div>
+      </div>
     </div>
     <script>
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
