@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM healthCare</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check" viewBox="0 0 16 16">
+          <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+        </symbol>
+        <symbol id="x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </symbol>
+        <symbol id="dash" viewBox="0 0 16 16">
+            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+        </symbol>
+      </svg>
+
+    <div class="container py-3">
+      <header>
+        <h1> Our Wellness Plans</h1>
+        <p>StayWell is committed to helping you lead a healthier life. While much of our content is free, we also offer exclusive premium plans packed with personalized resources, guided routines, and expert support — all at an affordable price.</p>
+        <div
+          class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center link-body-emphasis text-decoration-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="32"
+              class="me-2"
+              viewBox="0 0 118 94"
+              role="img"
+            >
+        </div>
+      </header>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Free Plan</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    ₹0<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Access to daily health and wellness tips</li>
+                  <li>Free yoga routines (PDF format)</li>
+                  <li>Beginner-level fitness guides</li>
+                  <li>Email newsletter with wellness ideas</li>
+                  <li>Mental wellness articles</li>
+                  <li> Perfect for students and beginners</li>
+                </ul>
+                <button
+                  type="button"
+                  class="w-100 btn btn-lg btn-outline-dark"
+                >
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Premium Plan</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    ₹299<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Unlock advanced yoga and fitness routines</li>
+                  <li> Download premium PDFs and meal plans</li>
+                  <li> Access expert-curated yoga sequences</li>
+                  <li>Personalized 4-week wellness calendar</li>
+                  <li>1:1 Q&A support via email</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-success">
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-dark border-primary">
+                <h4 class="my-0 fw-normal">Pro Plan</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                    ₹799<small class="text-body-secondary fw-light">/mo</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Everything in Premium</li>
+                  <li>Personalized diet and nutrition plan</li>
+                  <li>1 consultation call/month with a wellness expert</li>
+                  <li>Printable habit tracker & progress sheets</li>
+                  <li>Free monthly eBook on wellness and productivity</li>
+                  <li>Live guided yoga session every week</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-danger">
+                  Contact us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="display-6 text-center mb-4"><b>Compare plans</b></h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%"></th>
+                <th style="width: 22%">Free</th>
+                <th style="width: 22%">Premium</th>
+                <th style="width: 22%">Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Public</th>
+                <td>
+                    <svg class="bi" width="24" height="24" role="img" aria-label="Included">
+                        <use xlink:href="#check"></use>
+                    </svg>                      
+                </td>
+                <td>
+                    <svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                        <use xlink:href="#check"></use>
+                      </svg>
+                </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Private</th>
+                <td>
+                    <svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                        <use xlink:href="#x"></use>
+                    </svg>                      
+                </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+                <th scope="row" class="text-start">Sharing</th>
+                <td><svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                    <use xlink:href="#x"></use>
+                  </svg>
+                  </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Unlimited members</th>
+                <td><svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                    <use xlink:href="#x"></use>
+                  </svg>
+                  </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Extra security</th>
+                <td><svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                    <use xlink:href="#x"></use>
+                  </svg>
+                  </td>
+                <td><svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                    <use xlink:href="#x"></use>
+                  </svg>
+                  </td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Priority Support</th>
+                <td><svg class="bi" width="24" height="24" role="img" aria-label="Not included">
+                    <use xlink:href="#x"></use>
+                  </svg>
+                  </td>
+                <td><svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg></td>
+                <td>
+                  <svg
+                    class="bi"
+                    width="24"
+                    height="24"
+                    role="img"
+                    aria-label="Included"
+                  >
+                    <use xlink:href="#check"></use>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+    
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO";
+      crossorigin = "anonymous";
+    </script>
+  </body>
+</html>
